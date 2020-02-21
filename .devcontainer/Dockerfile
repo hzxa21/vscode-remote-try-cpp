@@ -21,7 +21,7 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
     # 
     # Verify git, process tools, lsb-release (useful for CLI installs) installed
-    && apt-get -y install git iproute2 procps lsb-release \
+    && apt-get -y install git iproute2 procps lsb-release wget \
     #
     # Install C++ tools
     && wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
