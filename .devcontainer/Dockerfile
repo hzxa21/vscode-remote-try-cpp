@@ -27,8 +27,8 @@ RUN apt-get update \
     # && wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
     # && add-apt-repository "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-8 main" \
     ## && add-apt-repository ppa:ubuntu-toolchain-r/ppa \
-    && apt install -y build-essential clang cmake gcc ninja-build ccache lcov \
-    ## && apt install -y build-essential clang clang-8 cmake gcc libstdc++-8-dev ninja-build ccache llvm-8 lcov \
+    ## && apt install -y build-essential clang cmake gcc ninja-build ccache lcov \
+    && apt install -y build-essential clang clang-8 cmake gcc libstdc++-8-dev ninja-build ccache llvm-8 lcov \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
     && groupadd --gid $USER_GID $USERNAME \
